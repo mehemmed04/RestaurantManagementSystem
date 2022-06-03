@@ -1,0 +1,44 @@
+Zeytin Bagi   9-cu mkr   Baku   0
+2
+admin   admin
+admin   12345
+9
+T1  not-ready   
+T2  not-ready   
+T3  not-ready   
+T4  not-ready   
+T5  not-ready   
+T6  not-ready   
+T7  not-ready   
+T8  not-ready   
+T9  not-ready   
+9
+Cheese  200.25   20.3   25.2   3.2   1.5
+Rice  240.25   1   6   80   1.5
+Tomato  170.25   5   1.2   3.4   0.5
+Salt  1   0.1   0.6   0   0.1
+Beef  549   23   123   12   15
+Cucumber  20   1   3   9   0.5
+Pepper  0.9   0.1   0.2   0.5   0.5
+Milk  200   10   30   90   3.5
+Chicken  220   20   40   15   5.5
+5
+Dolma   9.8   15.5  2
+Beef   300
+Tomato   200
+Plov   9.6   2.1  3
+Rice   200
+Salt   2
+Tomato   200
+Salat   4.5   1  2
+Tomato   200
+Cucumber   300
+Doner   7.5   2.1  3
+Rice   200
+Salt   2
+Pepper   300
+Xengel   5.5   6.1  3
+Salt   2
+Chicken   300
+Pepper   300
+0
