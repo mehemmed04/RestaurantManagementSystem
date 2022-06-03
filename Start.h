@@ -336,33 +336,36 @@ public:
 					int select = 0;
 					//Table CurrentTable;
 					//Table* CurrentTablePtr;
-					cout << "Accept [1],  Reject [2] : "; cin >> select;
-					if (select == 1) {
-						cout << "Enter Table number : ";
-						string Table_no;
-						cin.ignore();
-						cin.clear();
-						getline(cin, Table_no);
-						//Table* CurrentTablePtr = database.restaurant.GetTableByNoPtr(Table_no);
-						Table CurrentTable = database.restaurant.GetTableByNo(Table_no);
-						CurrentTable.SetMessageFromKitchen("Your request accepted");
-						CurrentTable.IsReady = true;
-						database.restaurant.SetTable(CurrentTable);
-						IsReadyOrder = true;
-					}
-					else if (select == 2) {
-						cout << "Enter Table number : ";
-						string Table_no;
-						cin.ignore();
-						cin.clear();
-						getline(cin, Table_no);
-						Table CurrentTable = database.restaurant.GetTableByNo(Table_no);
-						CurrentTable = database.restaurant.GetTableByNo(Table_no);
-						CurrentTable.SetMessageFromKitchen("Your request rejected");
-						CurrentTable.IsReady = true;
-					}
-					else {
-						break;
+					if (!IsReadyOrder) {
+						database.kitchen.ShowAllOrders();
+						cout << "Accept [1],  Reject [2] : "; cin >> select;
+						if (select == 1) {
+							cout << "Enter Table number : ";
+							string Table_no;
+							cin.ignore();
+							cin.clear();
+							getline(cin, Table_no);
+							//Table* CurrentTablePtr = database.restaurant.GetTableByNoPtr(Table_no);
+							Table CurrentTable = database.restaurant.GetTableByNo(Table_no);
+							CurrentTable.SetMessageFromKitchen("Your request accepted");
+							CurrentTable.IsReady = true;
+							database.restaurant.SetTable(CurrentTable);
+							IsReadyOrder = true;
+						}
+						else if (select == 2) {
+							cout << "Enter Table number : ";
+							string Table_no;
+							cin.ignore();
+							cin.clear();
+							getline(cin, Table_no);
+							Table CurrentTable = database.restaurant.GetTableByNo(Table_no);
+							CurrentTable = database.restaurant.GetTableByNo(Table_no);
+							CurrentTable.SetMessageFromKitchen("Your request rejected");
+							CurrentTable.IsReady = true;
+						}
+						else {
+							break;
+						}
 					}
 
 

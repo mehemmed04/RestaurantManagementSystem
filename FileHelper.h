@@ -93,6 +93,8 @@ Database ReadDatabaseFromFile() {
 	database.stock = s;
 	return database;
 }
+
+
 void WriteDatabaseToFile(Database& database) {
 	Restaurant r = database.restaurant;
 	ofstream fout("Database.txt", ios::out);
